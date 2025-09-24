@@ -1,0 +1,142 @@
+:root {
+  --rosa: #e91e63;
+  --roxo: #9c27b0;
+  --claro: #f9f4fa;
+  --escuro: #1a1a1a;
+  --texto: #333;
+  --branco: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: var(--claro);
+  color: var(--texto);
+  line-height: 1.7;
+  transition: all 0.3s ease;
+  font-size: 100%;
+}
+
+header {
+  background: var(--rosa);
+  color: var(--branco);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--branco);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--escuro);
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section:nth-child(even) {
+  background: #d37292;
+}
+
+section h2 {
+  color: var(--rosa);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+section p, section ul {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+ul {
+  text-align: left;
+  margin-top: 15px;
+}
+
+footer {
+  background: var(--rosa);
+  color: var(--branco);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* MENU DE ACESSIBILIDADE */
+#acessibilidade {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background: var(--roxo);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+#acessibilidade button {
+  display: block;
+  margin: 8px 0;
+  width: 160px;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: var(--rosa);
+  color: var(--branco);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#acessibilidade button:hover {
+  background: var(--escuro);
+}
+
+/* CONTRASTE */
+.contraste {
+  background: var(--escuro) !important;
+  color: var(--branco) !important;
+}
+
+.contraste header {
+  background: black !important;
+}
+
+.contraste section {
+  background: #333 !important;
+}
+
+.contraste footer {
+  background: black !important;
+}
+
+/* DESTAQUE LINKS */
+.destacar-links a {
+  background: yellow;
+  color: black !important;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
